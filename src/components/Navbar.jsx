@@ -27,10 +27,22 @@ export const Navbar = () => {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-8 text-sm tracking-widest uppercase font-medium text-chocolate">
-          <a href="#collections" className="hover:text-gold transition-colors">Collections</a>
-          <a href="#customization" className="hover:text-gold transition-colors">Customization</a>
-          <a href="#gallery" className="hover:text-gold transition-colors">Gallery</a>
-          <a href="#contact" className="hover:text-gold transition-colors">Contact</a>
+          <a href="#collections" className="relative group overflow-hidden py-2 hover:text-gold transition-colors duration-500">
+            Collections
+            <span className="absolute bottom-0 left-0 w-full h-[1px] bg-gold transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-[var(--ease-luxury)]"></span>
+          </a>
+          <a href="#customization" className="relative group overflow-hidden py-2 hover:text-gold transition-colors duration-500">
+            Customization
+            <span className="absolute bottom-0 left-0 w-full h-[1px] bg-gold transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-[var(--ease-luxury)]"></span>
+          </a>
+          <a href="#gallery" className="relative group overflow-hidden py-2 hover:text-gold transition-colors duration-500">
+            Gallery
+            <span className="absolute bottom-0 left-0 w-full h-[1px] bg-gold transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-[var(--ease-luxury)]"></span>
+          </a>
+          <a href="#contact" className="relative group overflow-hidden py-2 hover:text-gold transition-colors duration-500">
+            Contact
+            <span className="absolute bottom-0 left-0 w-full h-[1px] bg-gold transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-[var(--ease-luxury)]"></span>
+          </a>
         </div>
 
         <a
