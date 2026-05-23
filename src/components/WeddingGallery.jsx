@@ -5,13 +5,13 @@ import { useNavigate } from 'react-router-dom';
 export const WeddingGallery = () => {
   const navigate = useNavigate()
   const images = [
-    { type: 'tall', bg: 'bg-champagne', title: 'Sleeve Covers', img: "/3N/img1.png" },
-    { type: 'wide', bg: 'bg-blush', title: 'Premium Gift Boxes', img: "/3N/img2.png" },
-    { type: 'square', bg: 'bg-ivory', title: 'Flat Mailers', img: "/3N/img3.png" },
-    { type: 'square', bg: 'bg-cream', title: 'Engraved Bars', img: "/3N/img4.png" },
-    { type: 'wide', bg: 'bg-olive/20', title: 'Event Hampers', img: "/3N/img5.png" },
-    { type: 'wide', bg: 'bg-olive/20', title: 'Event Hampers', img: "/3N/img6.png" },
-    { type: 'wide', bg: 'bg-olive/20', title: 'Event Hampers', img: "/3N/img7.jpg" },
+    { type: 'tall', bg: 'bg-champagne', title: 'Sleeve Covers', img: "/gallery/img1.png" },
+    { type: 'square', bg: 'bg-blush', title: 'Premium Gift Boxes', img: "/gallery/img2.png" },
+    { type: 'wide', bg: 'bg-cream', title: 'Engraved Bars', img: "/gallery/img4.png" },
+    { type: 'square', bg: 'bg-ivory', title: 'Flat Mailers', img: "/gallery/img3.png" },
+    { type: 'wide', bg: 'bg-olive/20', title: 'Event Hampers', img: "/gallery/img5.png" },
+    { type: 'wide', bg: 'bg-olive/20', title: 'Event Hampers', img: "/gallery/img6.png" },
+    { type: 'wide', bg: 'bg-olive/20', title: 'Event Hampers', img: "/gallery/img7.png" },
 
   ];
 
