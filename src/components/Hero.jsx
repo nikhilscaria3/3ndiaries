@@ -66,7 +66,7 @@ export const Hero = () => {
         <div className="text-center md:text-left">
           <div className=" mb-10">
             <motion.span
-          
+
               variants={textVariants}
               className="font-script text-3xl sm:text-4xl md:text-5xl text-gold text-shimmer"
             >
@@ -127,6 +127,20 @@ export const Hero = () => {
             />
           </motion.div>
         </motion.div>
+      </div>
+      <div className="absolute bottom-0 left-0 w-full overflow-hidden bg-white/40 backdrop-blur-md border-t border-champagne/50 py-4 z-20">
+        <div className="animate-marquee flex gap-8 md:gap-16 items-center whitespace-nowrap">
+          {[...Array(6)].map((_, i) => (
+            <React.Fragment key={i}>
+              <span className="text-sm md:text-base tracking-[0.2em] uppercase text-chocolate">3NDIARIES</span>
+              <span className="text-gold opacity-60">•</span>
+              <span className="text-sm md:text-base tracking-[0.2em] uppercase text-chocolate">Sweetest Moments</span>
+              <span className="text-gold opacity-60">•</span>
+              <span className="text-sm md:text-base tracking-[0.2em] uppercase text-chocolate">Luxury Personalized Chocolates</span>
+              <span className="text-gold opacity-60">•</span>
+            </React.Fragment>
+          ))}
+        </div>
       </div>
     </section>
   );
