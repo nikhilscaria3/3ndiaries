@@ -8,8 +8,13 @@
   body {
     @apply font-sans bg-cream text-text selection:bg-gold selection:text-white;
   }
-  
-  h1, h2, h3, h4, h5, h6 {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     @apply font-serif text-chocolate;
   }
 }
@@ -18,7 +23,7 @@
   .btn-primary {
     @apply bg-chocolate text-cream px-8 py-3 rounded-none font-medium tracking-widest uppercase text-sm border border-chocolate hover:bg-transparent hover:text-chocolate transition-all duration-300;
   }
-  
+
   .btn-outline {
     @apply bg-transparent text-chocolate px-8 py-3 rounded-none font-medium tracking-widest uppercase text-sm border border-chocolate hover:bg-chocolate hover:text-cream transition-all duration-300;
   }

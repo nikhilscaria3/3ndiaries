@@ -55,7 +55,7 @@ export const WeddingGallery = () => {
         </div>
 
         <div className="text-center mt-12">
-          <button className="btn-outline">View Full Portfolio</button>
+          <button className="btn-primary mt-10">View Full Portfolio</button>
         </div>
       </div>
     </section>

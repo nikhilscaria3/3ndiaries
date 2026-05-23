@@ -11,7 +11,7 @@ export const PartnerWithUs = () => {
         <p className="text-text font-light mb-10 leading-relaxed">
           Are you a wedding planner, event decorator, caterer, or photographer? We partner with industry professionals to provide premium, white-labeled, or co-branded luxury chocolate gifting for your clients. Enhance your event packages with our bespoke offerings.
         </p>
-        
+
         <div className="flex flex-col sm:flex-row justify-center gap-6 mt-8">
           <div className="border border-gold/30 p-6 bg-white shadow-sm flex-1">
             <h3 className="font-serif text-xl text-chocolate mb-2">Event Planners</h3>
@@ -26,9 +26,9 @@ export const PartnerWithUs = () => {
             <p className="text-xs text-text/70 font-light uppercase tracking-widest">Bulk Supply</p>
           </div>
         </div>
-        
+
         <div className="mt-12">
-          <button className="btn-outline">Inquire About Partnerships</button>
+          <button className="btn-primary mt-10">Inquire About Partnerships</button>
         </div>
       </div>
     </section>

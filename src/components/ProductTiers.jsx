@@ -31,7 +31,7 @@ export const ProductTiers = () => {
     <section id="collections" className="py-24 bg-white relative">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <motion.h2 
+          <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -60,15 +60,15 @@ export const ProductTiers = () => {
                   Most Popular
                 </div>
               )}
-              
+
               <div className={`w-32 h-32 rounded-t-full rounded-b-full mb-8 ${tier.image} opacity-80 flex items-center justify-center`}>
                 <span className="font-script text-2xl text-white">Choc</span>
               </div>
-              
+
               <h3 className="font-serif text-3xl text-chocolate mb-2">{tier.name}</h3>
               <div className="font-sans text-xs tracking-widest text-gold uppercase mb-4">{tier.weight}</div>
               <p className="font-light text-text/80 mb-8">{tier.description}</p>
-              
+
               <ul className="space-y-3 mb-10 w-full text-left font-light text-sm">
                 {tier.features.map((feature, i) => (
                   <li key={i} className="flex items-center text-text/80">
@@ -77,8 +77,8 @@ export const ProductTiers = () => {
                   </li>
                 ))}
               </ul>
-              
-              <button className="btn-outline w-full mt-auto">View Details</button>
+
+              <button className="btn-primary mt-auto">View Details</button>
             </motion.div>
           ))}
         </div>
