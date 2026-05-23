@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { LoadingScreen } from './../components/LoadingScreen';
 import { Hero } from './../components/Hero';
 import { ProductTiers } from './../components/ProductTiers';
+import { Flavors } from './../components/Flavors';
 import { Customization } from './../components/Customization';
 import { HowItWorks } from './../components/HowItWorks';
 import { WeddingGallery } from './../components/WeddingGallery';
@@ -26,6 +27,7 @@ function Home() {
         >
             <Hero />
             <ProductTiers />
+            <Flavors />
             <Customization />
             {/* <CoverPreviewGenerator /> */}
             <HowItWorks />
