@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans bg-cream text-text selection:bg-gold selection:text-white;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif text-chocolate;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-chocolate text-cream px-8 py-3 rounded-none font-medium tracking-widest uppercase text-sm border border-chocolate hover:bg-transparent hover:text-chocolate transition-all duration-300;
+  }
+  
+  .btn-outline {
+    @apply bg-transparent text-chocolate px-8 py-3 rounded-none font-medium tracking-widest uppercase text-sm border border-chocolate hover:bg-chocolate hover:text-cream transition-all duration-300;
+  }
+}
+
+/* Custom Utilities for smooth reveal */
+.glass-effect {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
