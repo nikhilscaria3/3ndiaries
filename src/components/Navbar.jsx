@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 export const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -17,29 +18,29 @@ export const Navbar = () => {
   return (
     <nav className={`fixed w-full z-50 transition-all duration-500 ${isScrolled ? 'bg-cream/90 backdrop-blur-md py-4 shadow-sm' : 'bg-transparent py-6'}`}>
       <div className="container mx-auto px-6 flex justify-between items-center">
-        <a href="#" className="flex items-center">
+        <Link to="/" className="flex items-center">
           <img
             src="/3N/bgwhitelogo.png"
             alt="3NDIARIES Logo"
             className={`h-10 transition-all duration-300`}
           />
-        </a>
+        </Link>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-8 text-sm tracking-widest uppercase font-medium text-chocolate">
-          <a href="#collections" className="relative group overflow-hidden py-2 hover:text-gold transition-colors duration-500">
+          <a href="/#collections" className="relative group overflow-hidden py-2 hover:text-gold transition-colors duration-500">
             Collections
             <span className="absolute bottom-0 left-0 w-full h-[1px] bg-gold transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-[var(--ease-luxury)]"></span>
           </a>
-          <a href="#customization" className="relative group overflow-hidden py-2 hover:text-gold transition-colors duration-500">
+          <a href="/#customization" className="relative group overflow-hidden py-2 hover:text-gold transition-colors duration-500">
             Customization
             <span className="absolute bottom-0 left-0 w-full h-[1px] bg-gold transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-[var(--ease-luxury)]"></span>
           </a>
-          <a href="#gallery" className="relative group overflow-hidden py-2 hover:text-gold transition-colors duration-500">
+          <Link to="/gallery" className="relative group overflow-hidden py-2 hover:text-gold transition-colors duration-500">
             Gallery
             <span className="absolute bottom-0 left-0 w-full h-[1px] bg-gold transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-[var(--ease-luxury)]"></span>
-          </a>
-          <a href="#contact" className="relative group overflow-hidden py-2 hover:text-gold transition-colors duration-500">
+          </Link>
+          <a href="/#contact" className="relative group overflow-hidden py-2 hover:text-gold transition-colors duration-500">
             Contact
             <span className="absolute bottom-0 left-0 w-full h-[1px] bg-gold transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-[var(--ease-luxury)]"></span>
           </a>
@@ -67,10 +68,10 @@ export const Navbar = () => {
             exit={{ opacity: 0, y: -20 }}
             className="absolute top-full left-0 w-full bg-cream shadow-lg py-6 flex flex-col items-center space-y-6 md:hidden"
           >
-            <a href="#collections" onClick={() => setIsOpen(false)} className="text-chocolate tracking-widest uppercase text-sm">Collections</a>
-            <a href="#customization" onClick={() => setIsOpen(false)} className="text-chocolate tracking-widest uppercase text-sm">Customization</a>
-            <a href="#gallery" onClick={() => setIsOpen(false)} className="text-chocolate tracking-widest uppercase text-sm">Gallery</a>
-            <a href="#contact" onClick={() => setIsOpen(false)} className="text-chocolate tracking-widest uppercase text-sm">Contact</a>
+            <a href="/#collections" onClick={() => setIsOpen(false)} className="text-chocolate tracking-widest uppercase text-sm">Collections</a>
+            <a href="/#customization" onClick={() => setIsOpen(false)} className="text-chocolate tracking-widest uppercase text-sm">Customization</a>
+            <Link to="/gallery" onClick={() => setIsOpen(false)} className="text-chocolate tracking-widest uppercase text-sm">Gallery</Link>
+            <a href="/#contact" onClick={() => setIsOpen(false)} className="text-chocolate tracking-widest uppercase text-sm">Contact</a>
             <button className="btn-primary w-3/4 py-3">Order Now</button>
           </motion.div>
         )}
