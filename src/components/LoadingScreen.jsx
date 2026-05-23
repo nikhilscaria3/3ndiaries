@@ -32,7 +32,7 @@ export const LoadingScreen = ({ onComplete }) => {
             <img
               src="/3N/bgwhitelogo.png"
               alt="3NDIARIES"
-              className="h-16 mb-8 drop-shadow-md"
+              className="h-40 mb-8 drop-shadow-md"
             />
             <div className="overflow-hidden">
               <motion.p
