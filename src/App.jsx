@@ -5,6 +5,7 @@ import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { ProductTiers } from './components/ProductTiers';
 import { Customization } from './components/Customization';
+import { CoverPreviewGenerator } from './components/CoverPreviewGenerator';
 import { HowItWorks } from './components/HowItWorks';
 import { WeddingGallery } from './components/WeddingGallery';
 import { PartnerWithUs } from './components/PartnerWithUs';
@@ -19,11 +20,11 @@ function App() {
     <>
       <div className="noise-overlay"></div>
       <div className="particles-bg"></div>
-      
+
       {loading ? (
         <LoadingScreen onComplete={() => setLoading(false)} />
       ) : (
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, ease: [0.25, 1, 0.5, 1] }}
@@ -33,6 +34,7 @@ function App() {
           <Hero />
           <ProductTiers />
           <Customization />
+          {/* <CoverPreviewGenerator /> */}
           <HowItWorks />
           <WeddingGallery />
           <PartnerWithUs />
