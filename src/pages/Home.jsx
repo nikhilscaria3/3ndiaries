@@ -1,4 +1,6 @@
+import { useState } from 'react';
 import { motion } from 'framer-motion';
+import { LoadingScreen } from './../components/LoadingScreen';
 import { Hero } from './../components/Hero';
 import { ProductTiers } from './../components/ProductTiers';
 import { Customization } from './../components/Customization';
@@ -8,6 +10,12 @@ import { PartnerWithUs } from './../components/PartnerWithUs';
 import { ContactCTA } from './../components/ContactCTA';
 
 function Home() {
+    const [loading, setLoading] = useState(true);
+
+    if (loading) {
+        return <LoadingScreen onComplete={() => setLoading(false)} />;
+    }
+
     return (
         <motion.div
             initial={{ opacity: 0 }}
