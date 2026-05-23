@@ -1,7 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
 
 export const WeddingGallery = () => {
+  const navigate = useNavigate()
   const images = [
     { type: 'tall', bg: 'bg-champagne', title: 'Sleeve Covers', img: "/3N/img1.png" },
     { type: 'wide', bg: 'bg-blush', title: 'Premium Gift Boxes', img: "/3N/img2.png" },
@@ -55,7 +57,7 @@ export const WeddingGallery = () => {
         </div>
 
         <div className="text-center mt-12">
-          <button className="btn-primary mt-10">View Full Portfolio</button>
+          <button className="btn-primary mt-10" onClick={() => navigate("/gallery")}>View Full Portfolio</button>
         </div>
       </div>
     </section>
