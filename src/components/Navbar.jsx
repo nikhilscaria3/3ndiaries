@@ -47,12 +47,13 @@ export const Navbar = () => {
         </div>
 
         <a
-          href="https://wa.me/919562849356"
+          href="https://forms.gle/fZ3wYdhRZUVm1dXb6"
           target="_blank"
           rel="noopener noreferrer"
           className="hidden md:block btn-primary px-6 py-2 text-xs">
           Order Now
         </a>
+
         {/* Mobile Toggle */}
         <button className="md:hidden text-chocolate" onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -72,7 +73,7 @@ export const Navbar = () => {
             <Link to="/customization" onClick={() => setIsOpen(false)} className="text-chocolate tracking-widest uppercase text-sm">Customization</Link>
             <Link to="/gallery" onClick={() => setIsOpen(false)} className="text-chocolate tracking-widest uppercase text-sm">Gallery</Link>
             <Link to="/contact" onClick={() => setIsOpen(false)} className="text-chocolate tracking-widest uppercase text-sm">Contact</Link>
-            <button className="btn-primary w-3/4 py-3">Order Now</button>
+            <a href="https://forms.gle/fZ3wYdhRZUVm1dXb6" target="_blank" rel="noopener noreferrer" className="btn-primary w-3/4 py-3 text-center block">Order Now</a>
           </motion.div>
         )}
       </AnimatePresence>

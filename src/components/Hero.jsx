@@ -1,7 +1,9 @@
 import React, { useEffect } from 'react';
 import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
 
 export const Hero = () => {
+  const navigate = useNavigate()
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
 
@@ -101,8 +103,13 @@ export const Hero = () => {
             variants={textVariants}
             className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start"
           >
-            <button className="btn-primary">Explore Collections</button>
-            <button className="btn-outline">Request Custom Design</button>
+            <button className="btn-primary" onClick={() => navigate("/collections")}>Explore Collections</button>
+            <a
+              href="https://forms.gle/fZ3wYdhRZUVm1dXb69"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-outline">
+              Request Custom Design            </a>
           </motion.div>
         </div>
 
