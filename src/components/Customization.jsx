@@ -6,8 +6,8 @@ export const Customization = () => {
 
   const features = [
     {
-      title: 'Custom Photo Cover', desc: 'A beautiful illustration or photo on the outer sleeve.', visual: <div className="w-full h-full bg-blush flex items-center justify-center font-serif text-3xl text-chocolate shadow-inner overflow-hidden">
-        <img src="/3N/bgimg5.png" alt="" className="object-cover w-full h-full" />
+      title: 'Custom Photo Cover', desc: 'A beautiful illustration or photo on the outer sleeve.', visual: <div className="w-full h-full bg-cream flex items-center justify-center font-serif text-3xl text-chocolate overflow-hidden">
+        <img src="/gallery/img3.png" alt="" className="object-contain w-full h-full" />
       </div>
     },
     { title: 'Bespoke Monograms', desc: 'Elegant initials intertwined with gold foil.', visual: <div className="w-full h-full bg-ivory flex items-center justify-center font-script text-6xl text-gold shadow-inner border-[8px] border-double border-champagne">S & J</div> },
