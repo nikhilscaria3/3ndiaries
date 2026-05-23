@@ -28,22 +28,22 @@ export const Navbar = () => {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-8 text-sm tracking-widest uppercase font-medium text-chocolate">
-          <a href="/#collections" className="relative group overflow-hidden py-2 hover:text-gold transition-colors duration-500">
+          <Link to="/collections" className="relative group overflow-hidden py-2 hover:text-gold transition-colors duration-500">
             Collections
             <span className="absolute bottom-0 left-0 w-full h-[1px] bg-gold transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-[var(--ease-luxury)]"></span>
-          </a>
-          <a href="/#customization" className="relative group overflow-hidden py-2 hover:text-gold transition-colors duration-500">
+          </Link>
+          <Link to="/customization" className="relative group overflow-hidden py-2 hover:text-gold transition-colors duration-500">
             Customization
             <span className="absolute bottom-0 left-0 w-full h-[1px] bg-gold transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-[var(--ease-luxury)]"></span>
-          </a>
+          </Link>
           <Link to="/gallery" className="relative group overflow-hidden py-2 hover:text-gold transition-colors duration-500">
             Gallery
             <span className="absolute bottom-0 left-0 w-full h-[1px] bg-gold transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-[var(--ease-luxury)]"></span>
           </Link>
-          <a href="/#contact" className="relative group overflow-hidden py-2 hover:text-gold transition-colors duration-500">
+          <Link to="/contact" className="relative group overflow-hidden py-2 hover:text-gold transition-colors duration-500">
             Contact
             <span className="absolute bottom-0 left-0 w-full h-[1px] bg-gold transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-[var(--ease-luxury)]"></span>
-          </a>
+          </Link>
         </div>
 
         <a
@@ -68,10 +68,10 @@ export const Navbar = () => {
             exit={{ opacity: 0, y: -20 }}
             className="absolute top-full left-0 w-full bg-cream shadow-lg py-6 flex flex-col items-center space-y-6 md:hidden"
           >
-            <a href="/#collections" onClick={() => setIsOpen(false)} className="text-chocolate tracking-widest uppercase text-sm">Collections</a>
-            <a href="/#customization" onClick={() => setIsOpen(false)} className="text-chocolate tracking-widest uppercase text-sm">Customization</a>
+            <Link to="/collections" onClick={() => setIsOpen(false)} className="text-chocolate tracking-widest uppercase text-sm">Collections</Link>
+            <Link to="/customization" onClick={() => setIsOpen(false)} className="text-chocolate tracking-widest uppercase text-sm">Customization</Link>
             <Link to="/gallery" onClick={() => setIsOpen(false)} className="text-chocolate tracking-widest uppercase text-sm">Gallery</Link>
-            <a href="/#contact" onClick={() => setIsOpen(false)} className="text-chocolate tracking-widest uppercase text-sm">Contact</a>
+            <Link to="/contact" onClick={() => setIsOpen(false)} className="text-chocolate tracking-widest uppercase text-sm">Contact</Link>
             <button className="btn-primary w-3/4 py-3">Order Now</button>
           </motion.div>
         )}
