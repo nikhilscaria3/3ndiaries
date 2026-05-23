@@ -7,6 +7,7 @@ import { Customization } from './../components/Customization';
 import { HowItWorks } from './../components/HowItWorks';
 import { WeddingGallery } from './../components/WeddingGallery';
 import { PartnerWithUs } from './../components/PartnerWithUs';
+import { Collaborators } from './../components/Collaborators';
 import { ContactCTA } from './../components/ContactCTA';
 
 function Home() {
@@ -29,6 +30,7 @@ function Home() {
             {/* <CoverPreviewGenerator /> */}
             <HowItWorks />
             <WeddingGallery />
+            <Collaborators />
             <PartnerWithUs />
             <ContactCTA />
         </motion.div>
