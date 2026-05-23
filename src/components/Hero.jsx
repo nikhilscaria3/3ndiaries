@@ -64,14 +64,11 @@ export const Hero = () => {
 
       <div className="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center relative z-10">
         <div className="text-center md:text-left">
-          <div className="overflow-hidden mb-10">
+          <div className=" mb-10">
             <motion.span
-              custom={0}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
+          
               variants={textVariants}
-              className="font-script text-3xl sm:text-4xl md:text-5xl text-gold block text-shimmer"
+              className="font-script text-3xl sm:text-4xl md:text-5xl text-gold text-shimmer"
             >
               Sweetest Moments
             </motion.span>
