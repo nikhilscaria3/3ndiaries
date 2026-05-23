@@ -5,12 +5,12 @@ export const ContactCTA = () => {
   return (
     <section id="contact" className="relative py-32 bg-chocolate overflow-hidden">
       {/* Decorative background elements */}
-      <motion.div 
+      <motion.div
         animate={{ scale: [1, 1.1, 1], opacity: [0.2, 0.3, 0.2] }}
         transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
         className="absolute top-0 right-0 w-64 h-64 bg-gold rounded-full mix-blend-overlay filter blur-[100px]"
       ></motion.div>
-      <motion.div 
+      <motion.div
         animate={{ scale: [1, 1.2, 1], opacity: [0.1, 0.2, 0.1] }}
         transition={{ duration: 12, repeat: Infinity, ease: "easeInOut", delay: 1 }}
         className="absolute bottom-0 left-0 w-96 h-96 bg-olive rounded-full mix-blend-overlay filter blur-[100px]"
@@ -24,7 +24,7 @@ export const ContactCTA = () => {
           transition={{ duration: 1, ease: [0.25, 1, 0.5, 1] }}
         >
           <div className="overflow-hidden mb-4">
-            <motion.span 
+            <motion.span
               initial={{ y: 20 }}
               whileInView={{ y: 0 }}
               viewport={{ once: true }}
@@ -35,7 +35,7 @@ export const ContactCTA = () => {
             </motion.span>
           </div>
           <div className="overflow-hidden mb-6">
-            <motion.h2 
+            <motion.h2
               initial={{ y: 40 }}
               whileInView={{ y: 0 }}
               viewport={{ once: true }}
@@ -45,7 +45,7 @@ export const ContactCTA = () => {
               Start Your Custom <br className="hidden md:block" /> Chocolate Order
             </motion.h2>
           </div>
-          <motion.p 
+          <motion.p
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
@@ -63,7 +63,7 @@ export const ContactCTA = () => {
             className="flex flex-col sm:flex-row items-center justify-center gap-6"
           >
             <a
-              href="https://forms.gle/fZ3wYdhRZUVm1dXb6"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSeyqGNP2kVAdL7omHzsxAUytGz2XwhQWAvrJkixoAdCDagHqQ/viewform?usp=sharing&ouid=102357883540256253288"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-gold text-chocolate px-10 py-4 font-medium tracking-widest uppercase text-sm hover:bg-white hover:text-chocolate transition-all duration-[0.8s] ease-[var(--ease-luxury)] shadow-[0_0_20px_rgba(212,175,55,0.4)] hover:shadow-[0_0_40px_rgba(255,255,255,0.6)] hover:scale-105 hover:-translate-y-1 relative overflow-hidden"

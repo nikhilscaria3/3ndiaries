@@ -47,7 +47,7 @@ export const Navbar = () => {
         </div>
 
         <a
-          href="https://forms.gle/fZ3wYdhRZUVm1dXb6"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSeyqGNP2kVAdL7omHzsxAUytGz2XwhQWAvrJkixoAdCDagHqQ/viewform?usp=sharing&ouid=102357883540256253288"
           target="_blank"
           rel="noopener noreferrer"
           className="hidden md:block btn-primary px-6 py-2 text-xs">
@@ -73,7 +73,7 @@ export const Navbar = () => {
             <Link to="/customization" onClick={() => setIsOpen(false)} className="text-chocolate tracking-widest uppercase text-sm">Customization</Link>
             <Link to="/gallery" onClick={() => setIsOpen(false)} className="text-chocolate tracking-widest uppercase text-sm">Gallery</Link>
             <Link to="/contact" onClick={() => setIsOpen(false)} className="text-chocolate tracking-widest uppercase text-sm">Contact</Link>
-            <a href="https://forms.gle/fZ3wYdhRZUVm1dXb6" target="_blank" rel="noopener noreferrer" className="btn-primary w-3/4 py-3 text-center block">Order Now</a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeyqGNP2kVAdL7omHzsxAUytGz2XwhQWAvrJkixoAdCDagHqQ/viewform?usp=sharing&ouid=102357883540256253288" target="_blank" rel="noopener noreferrer" className="btn-primary w-3/4 py-3 text-center block">Order Now</a>
           </motion.div>
         )}
       </AnimatePresence>

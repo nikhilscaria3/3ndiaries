@@ -105,7 +105,7 @@ export const Hero = () => {
           >
             <button className="btn-primary" onClick={() => navigate("/collections")}>Explore Collections</button>
             <a
-              href="https://forms.gle/fZ3wYdhRZUVm1dXb69"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSeyqGNP2kVAdL7omHzsxAUytGz2XwhQWAvrJkixoAdCDagHqQ/viewform?usp=sharing&ouid=102357883540256253288"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-outline">
