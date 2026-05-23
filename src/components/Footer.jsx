@@ -32,7 +32,7 @@ export const Footer = () => {
       >
         <div className="grid md:grid-cols-4 gap-12">
           <motion.div variants={itemVariants} className="col-span-1 md:col-span-2">
-            <img src="/3N/bgwhitelogo.png" alt="3NDIARIES Logo" className="h-16 mb-4 drop-shadow-md" />
+            <img src="/3N/bgwhitelogo.png" alt="3NDIARIES Logo" className="h-20 mb-4 drop-shadow-md" />
             <p className="font-light text-cream/70 max-w-sm mb-6">
               Personalized luxury chocolates crafted for your sweetest moments. Based in Kerala, shipping nationwide.
             </p>
@@ -63,17 +63,10 @@ export const Footer = () => {
               <li className="pt-4 flex gap-6">
                 <motion.a
                   whileHover={{ y: -3 }}
-                  href="#"
+                  href="https://www.instagram.com/3n_diaries?igsh=b3d0dXY4ZXhlbGRv"
                   className="hover:text-gold transition-colors duration-300 block font-serif tracking-widest text-xs uppercase"
                 >
                   Instagram
-                </motion.a>
-                <motion.a
-                  whileHover={{ y: -3 }}
-                  href="#"
-                  className="hover:text-gold transition-colors duration-300 block font-serif tracking-widest text-xs uppercase"
-                >
-                  Facebook
                 </motion.a>
               </li>
             </ul>

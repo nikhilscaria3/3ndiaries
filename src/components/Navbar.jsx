@@ -22,7 +22,7 @@ export const Navbar = () => {
           <img
             src="/3N/bgwhitelogo.png"
             alt="3NDIARIES Logo"
-            className={`h-10 transition-all duration-300`}
+            className={`h-16 transition-all duration-300`}
           />
         </Link>
 
