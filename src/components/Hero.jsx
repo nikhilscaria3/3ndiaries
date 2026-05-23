@@ -44,7 +44,7 @@ export const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden bg-ivory">
+    <section className="relative min-h-screen flex items-center justify-center pt-32 pb-16 md:pt-20 md:pb-0 overflow-hidden bg-ivory">
       {/* Background Decor */}
       <motion.div
         style={{ x: bgX, y: bgY }}
@@ -71,13 +71,13 @@ export const Hero = () => {
               whileInView="visible"
               viewport={{ once: true }}
               variants={textVariants}
-              className="font-script text-4xl md:text-5xl text-gold block text-shimmer"
+              className="font-script text-3xl sm:text-4xl md:text-5xl text-gold block text-shimmer"
             >
               Sweetest Moments
             </motion.span>
           </div>
 
-          <h1 className="text-5xl md:text-7xl font-serif text-chocolate leading-tight mb-6">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl font-serif text-chocolate leading-tight mb-6">
             <div className="overflow-hidden"><motion.span className="block" custom={1} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={textVariants}>Luxury Personalized</motion.span></div>
             <div className="overflow-hidden"><motion.span className="block" custom={2} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={textVariants}>Chocolates for</motion.span></div>
             <div className="overflow-hidden"><motion.span className="block" custom={3} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={textVariants}>Every Occasion</motion.span></div>
@@ -115,7 +115,7 @@ export const Hero = () => {
           whileInView={{ opacity: 1, filter: 'blur(0px)', scale: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 1.2, delay: 0.8, ease: [0.25, 1, 0.5, 1] }}
-          className="relative h-[500px] w-full flex justify-center items-center"
+          className="hidden md:block relative h-[300px] sm:h-[400px] md:h-[500px] w-full flex justify-center items-center mt-8 md:mt-0"
         >
           {/* Luxury Mockup Image */}
           <motion.div

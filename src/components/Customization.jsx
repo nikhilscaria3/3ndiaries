@@ -6,8 +6,8 @@ export const Customization = () => {
 
   const features = [
     {
-      title: 'Custom Photo Cover', desc: 'A beautiful illustration or photo on the outer sleeve.', visual: <div className="">
-        <img src="/3N/bgimg5.png" alt="" className="object-cover" />
+      title: 'Custom Photo Cover', desc: 'A beautiful illustration or photo on the outer sleeve.', visual: <div className="w-full h-full bg-blush flex items-center justify-center font-serif text-3xl text-chocolate shadow-inner overflow-hidden">
+        <img src="/3N/bgimg5.png" alt="" className="object-cover w-full h-full" />
       </div>
     },
     { title: 'Bespoke Monograms', desc: 'Elegant initials intertwined with gold foil.', visual: <div className="w-full h-full bg-ivory flex items-center justify-center font-script text-6xl text-gold shadow-inner border-[8px] border-double border-champagne">S & J</div> },
@@ -24,13 +24,13 @@ export const Customization = () => {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 1, ease: [0.25, 1, 0.5, 1] }}
-          className="relative h-[500px] flex items-center justify-center perspective-[1000px]"
+          className="relative h-[350px] md:h-[500px] flex items-center justify-center perspective-[1000px] order-1 md:order-none mt-8 md:mt-0"
           style={{ perspective: "1000px" }}
         >
           <motion.div
             whileHover={{ rotateY: 8, rotateX: -4, scale: 1.02 }}
             transition={{ duration: 0.8, ease: [0.25, 1, 0.5, 1] }}
-            className="w-3/4 h-3/4 relative luxury-shadow rounded-sm overflow-hidden border border-champagne/50"
+            className="w-full h-full sm:w-4/5 sm:h-4/5 md:w-3/4 md:h-3/4 relative luxury-shadow rounded-sm overflow-hidden border border-champagne/50"
             style={{ transformStyle: "preserve-3d" }}
           >
             <AnimatePresence mode="wait">
@@ -53,6 +53,7 @@ export const Customization = () => {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 1, ease: [0.25, 1, 0.5, 1] }}
+          className="order-2 md:order-none"
         >
           <div className="overflow-hidden mb-2">
             <motion.span
