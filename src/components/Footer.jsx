@@ -59,7 +59,7 @@ export const Footer = () => {
             </h3>
             <ul className="space-y-3 font-light text-sm text-cream/80">
               <li><a href="mailto:hello@3ndiaries.com" className="hover:text-gold transition-colors duration-500">hello@3ndiaries.com</a></li>
-              <li><a href="tel:+919562849356" className="hover:text-gold transition-colors duration-500">+91 75618 49356</a></li>
+              <li><a href="tel:+919562849356" className="hover:text-gold transition-colors duration-500">+91 95628 49356</a></li>
               <li className="pt-4 flex gap-6">
                 <motion.a
                   whileHover={{ y: -3 }}
