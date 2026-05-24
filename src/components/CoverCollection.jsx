@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 const collections = {
     wedding: [
         { id: 'w1', src: '/collection/wedding/col1.png', title: 'Classic Elegance', desc: 'Timeless and sophisticated' },
-        { id: 'w2', src: '/collection/wedding/col2.png', title: 'Midnight Obsidian', desc: 'Deep, dark, and mysterious' },
+        // { id: 'w2', src: '/collection/wedding/col2.png', title: 'Midnight Obsidian', desc: 'Deep, dark, and mysterious' },
         { id: 'w3', src: '/collection/wedding/col3.png', title: 'Ocean Whisper', desc: 'Calm and profound' },
         { id: 'w4', src: '/collection/wedding/col4.png', title: 'Emerald Dream', desc: 'Lush and vibrant' },
         { id: 'w5', src: '/collection/wedding/col5.png', title: 'Golden Hour', desc: 'Warm and inviting' },
@@ -16,10 +16,15 @@ const collections = {
         { id: 'b2', src: '/collection/birthday/col2.png', title: 'Sweet Memories', desc: 'Playful and fun' }
     ],
     baptism: [
-        { id: 'ba1', src: '/collection/baptism/col1.png', title: 'Pure Grace', desc: 'Gentle and serene' }
+        { id: 'ba1', src: '/collection/baptism/col1.png', title: 'Pure Grace', desc: 'Gentle and serene' },
+        { id: 'ba2', src: '/collection/baptism/col2.png', title: 'Pure Grace', desc: 'Gentle and serene' }
+
+
     ],
     housewarming: [
-        { id: 'h1', src: '/collection/housewarming/col1.png', title: 'Warm Hearth', desc: 'Cozy and welcoming' }
+        { id: 'h1', src: '/collection/housewarming/col1.png', title: 'Warm Hearth', desc: 'Cozy and welcoming' },
+        { id: 'h2', src: '/collection/housewarming/col2.png', title: 'Warm Hearth', desc: 'Cozy and welcoming' },
+
     ]
 };
 
@@ -63,11 +68,10 @@ export function CoverCollection() {
                             <button
                                 key={event.id}
                                 onClick={() => setActiveEvent(event.id)}
-                                className={`px-6 py-2 rounded-full text-sm font-medium transition-all duration-300 border ${
-                                    activeEvent === event.id
-                                        ? 'bg-stone-200 text-stone-900 border-stone-200 shadow-[0_0_15px_rgba(231,229,228,0.3)]'
-                                        : 'bg-transparent text-stone-400 border-stone-700 hover:border-stone-500 hover:text-stone-200'
-                                }`}
+                                className={`px-6 py-2 rounded-full text-sm font-medium transition-all duration-300 border ${activeEvent === event.id
+                                    ? 'bg-stone-200 text-stone-900 border-stone-200 shadow-[0_0_15px_rgba(231,229,228,0.3)]'
+                                    : 'bg-transparent text-stone-400 border-stone-700 hover:border-stone-500 hover:text-stone-200'
+                                    }`}
                             >
                                 {event.label}
                             </button>
