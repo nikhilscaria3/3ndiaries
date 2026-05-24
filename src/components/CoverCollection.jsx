@@ -4,12 +4,11 @@ import { motion, AnimatePresence } from 'framer-motion';
 const collections = {
     wedding: [
         { id: 'w1', src: '/collection/wedding/col1.png', title: 'Classic Elegance', desc: 'Timeless and sophisticated' },
-        // { id: 'w2', src: '/collection/wedding/col2.png', title: 'Midnight Obsidian', desc: 'Deep, dark, and mysterious' },
-        { id: 'w3', src: '/collection/wedding/col3.png', title: 'Ocean Whisper', desc: 'Calm and profound' },
-        { id: 'w4', src: '/collection/wedding/col4.png', title: 'Emerald Dream', desc: 'Lush and vibrant' },
-        { id: 'w5', src: '/collection/wedding/col5.png', title: 'Golden Hour', desc: 'Warm and inviting' },
-        { id: 'w6', src: '/collection/wedding/col6.png', title: 'Silver Lining', desc: 'Sleek and modern' },
-        { id: 'w7', src: '/collection/wedding/col7.png', title: 'Vintage Leather', desc: 'Classic and timeless' }
+        { id: 'w2', src: '/collection/wedding/col2.png', title: 'Ocean Whisper', desc: 'Calm and profound' },
+        { id: 'w3', src: '/collection/wedding/col3.png', title: 'Emerald Dream', desc: 'Lush and vibrant' },
+        { id: 'w4', src: '/collection/wedding/col4.png', title: 'Golden Hour', desc: 'Warm and inviting' },
+        { id: 'w5', src: '/collection/wedding/col5.png', title: 'Silver Lining', desc: 'Sleek and modern' },
+        { id: 'w6', src: '/collection/wedding/col6.png', title: 'Vintage Leather', desc: 'Classic and timeless' }
     ],
     birthday: [
         { id: 'b1', src: '/collection/birthday/col1.png', title: 'Joyful Celebration', desc: 'Bright and energetic' },
@@ -100,6 +99,13 @@ export function CoverCollection() {
                                     alt={cover.title}
                                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                                 />
+
+                                {/* Unique ID Badge */}
+                                <div className="absolute top-4 right-4 bg-black/50 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/10 z-10 shadow-lg">
+                                    <span className="text-xs font-mono font-bold text-stone-200 uppercase tracking-widest">
+                                        {cover.id}
+                                    </span>
+                                </div>
 
                                 {/* Gradient Overlay */}
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
