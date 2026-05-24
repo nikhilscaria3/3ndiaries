@@ -10,6 +10,7 @@ import { WeddingGallery } from './../components/WeddingGallery';
 import { PartnerWithUs } from './../components/PartnerWithUs';
 import { Collaborators } from './../components/Collaborators';
 import { ContactCTA } from './../components/ContactCTA';
+import { Services } from './../components/Services';
 
 function Home() {
     const [loading, setLoading] = useState(true);
@@ -31,6 +32,7 @@ function Home() {
             <Customization />
             {/* <CoverPreviewGenerator /> */}
             <HowItWorks />
+            <Services />
             <WeddingGallery />
             <Collaborators />
             <PartnerWithUs />
