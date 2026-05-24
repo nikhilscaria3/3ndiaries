@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
 
 const tiers = [
   {
@@ -26,9 +27,10 @@ const tiers = [
   }
 ];
 
-const TiltCard = ({ tier, index }) => {
+const TiltCard = ({ tier, index, className = "" }) => {
   const ref = useRef(null);
-  
+  const navigate = useNavigate();
+
   const x = useMotionValue(0);
   const y = useMotionValue(0);
 
@@ -43,13 +45,13 @@ const TiltCard = ({ tier, index }) => {
     const rect = ref.current.getBoundingClientRect();
     const width = rect.width;
     const height = rect.height;
-    
+
     const mouseX = e.clientX - rect.left;
     const mouseY = e.clientY - rect.top;
-    
+
     const xPct = mouseX / width - 0.5;
     const yPct = mouseY / height - 0.5;
-    
+
     x.set(xPct);
     y.set(yPct);
   };
@@ -73,7 +75,7 @@ const TiltCard = ({ tier, index }) => {
         rotateX,
         transformStyle: "preserve-3d",
       }}
-      className={`relative bg-cream p-10 flex flex-col items-center text-center transition-shadow duration-[0.8s] ease-[var(--ease-luxury)] hover:shadow-[0_30px_60px_-15px_rgba(212,175,55,0.2)] group ${tier.featured ? 'border-2 border-gold/40' : 'border border-champagne/50 hover:border-gold/30'}`}
+      className={`relative bg-cream p-10 flex flex-col items-center text-center transition-shadow duration-[0.8s] ease-[var(--ease-luxury)] hover:shadow-[0_30px_60px_-15px_rgba(212,175,55,0.2)] group ${tier.featured ? 'border-2 border-gold/40' : 'border border-champagne/50 hover:border-gold/30'} ${className}`}
     >
       <div style={{ transform: "translateZ(30px)" }} className="absolute inset-0 pointer-events-none rounded-sm transition-opacity duration-500 opacity-0 group-hover:opacity-100 shadow-[inset_0_0_20px_rgba(212,175,55,0.15)]"></div>
 
@@ -83,8 +85,8 @@ const TiltCard = ({ tier, index }) => {
         </div>
       )}
 
-      <motion.div 
-        style={{ transform: "translateZ(50px)" }} 
+      <motion.div
+        style={{ transform: "translateZ(50px)" }}
         className={`w-32 h-32 rounded-t-full rounded-b-full mb-8 ${tier.image} opacity-80 flex items-center justify-center transition-all duration-[0.8s] ease-[var(--ease-luxury)] group-hover:scale-[1.08] group-hover:opacity-100 group-hover:shadow-[0_15px_30px_-5px_rgba(0,0,0,0.1)]`}
       >
         <span className="font-script text-2xl text-white drop-shadow-md">Choc</span>
@@ -104,7 +106,7 @@ const TiltCard = ({ tier, index }) => {
       </ul>
 
       <div style={{ transform: "translateZ(40px)" }} className="w-full mt-auto relative">
-        <button className="btn-primary w-full">View Details</button>
+        <button className="btn-primary w-full" onClick={() => navigate("/collections")}>View Details</button>
       </div>
     </motion.div>
   );
@@ -126,14 +128,14 @@ export const ProductTiers = () => {
               Curated Collections
             </motion.h2>
           </div>
-          <motion.div 
+          <motion.div
             initial={{ scaleX: 0 }}
             whileInView={{ scaleX: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2, ease: [0.25, 1, 0.5, 1] }}
             className="w-16 h-[1px] bg-gold mx-auto mb-6 origin-center"
           ></motion.div>
-          <motion.p 
+          <motion.p
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
@@ -146,7 +148,12 @@ export const ProductTiers = () => {
 
         <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8 max-w-7xl mx-auto" style={{ perspective: "1000px" }}>
           {tiers.map((tier, index) => (
-            <TiltCard key={index} tier={tier} index={index} />
+            <TiltCard 
+              key={index} 
+              tier={tier} 
+              index={index} 
+              className={index === 2 ? "md:col-span-2 lg:col-span-1 max-w-md mx-auto w-full" : "max-w-md mx-auto w-full"}
+            />
           ))}
         </div>
       </div>
