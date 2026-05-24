@@ -46,7 +46,7 @@ export const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center pt-32 pb-16 md:pt-20 md:pb-0 overflow-hidden bg-ivory">
+    <section className="relative min-h-screen flex items-center justify-center pt-32 pb-16 lg:pt-20 lg:pb-0 overflow-hidden bg-ivory">
       {/* Background Decor */}
       <motion.div
         style={{ x: bgX, y: bgY }}
@@ -64,19 +64,19 @@ export const Hero = () => {
         />
       </motion.div>
 
-      <div className="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center relative z-10">
-        <div className="text-center md:text-left">
+      <div className="container mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center relative z-10">
+        <div className="text-center lg:text-left">
           <div className=" mb-10">
             <motion.span
 
               variants={textVariants}
-              className="font-script text-3xl sm:text-4xl md:text-5xl text-gold text-shimmer"
+              className="font-script text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-gold text-shimmer"
             >
               Sweetest Moments
             </motion.span>
           </div>
 
-          <h1 className="text-4xl sm:text-5xl md:text-7xl font-serif text-chocolate leading-tight mb-6">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-serif text-chocolate leading-tight mb-6">
             <div className="overflow-hidden"><motion.span className="block" custom={1} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={textVariants}>Luxury Personalized</motion.span></div>
             <div className="overflow-hidden"><motion.span className="block" custom={2} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={textVariants}>Chocolates for</motion.span></div>
             <div className="overflow-hidden"><motion.span className="block" custom={3} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={textVariants}>Every Occasion</motion.span></div>
@@ -89,7 +89,7 @@ export const Hero = () => {
               whileInView="visible"
               viewport={{ once: true }}
               variants={textVariants}
-              className="text-lg md:text-xl text-text font-light mb-10 max-w-lg mx-auto md:mx-0"
+              className="text-lg md:text-xl text-text font-light mb-10 max-w-lg mx-auto lg:mx-0"
             >
               Custom printed covers, engraved chocolate bars, and premium gifting made for weddings, baptisms, birthdays, and unforgettable celebrations.
             </motion.p>
@@ -101,7 +101,7 @@ export const Hero = () => {
             whileInView="visible"
             viewport={{ once: true }}
             variants={textVariants}
-            className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start"
+            className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
           >
             <button className="btn-primary" onClick={() => navigate("/collections")}>Explore Collections</button>
             <a
@@ -119,7 +119,7 @@ export const Hero = () => {
           whileInView={{ opacity: 1, filter: 'blur(0px)', scale: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 1.2, delay: 0.8, ease: [0.25, 1, 0.5, 1] }}
-          className="hidden md:block relative h-[300px] sm:h-[400px] md:h-[500px] w-full flex justify-center items-center mt-8 md:mt-0"
+          className="relative h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] w-full flex justify-center items-center mt-8 lg:mt-0"
         >
           {/* Luxury Mockup Image */}
           <motion.div
@@ -130,12 +130,12 @@ export const Hero = () => {
             <img
               src="/3N/bgimg8.png"
               alt="Luxury Chocolate"
-              className="absolute inset-0 w-full h-full object-cover transition-transform duration-[1.5s] ease-[var(--ease-luxury)] group-hover:scale-[1.03]"
+              className="absolute inset-0 w-full h-full object-contain transition-transform duration-[1.5s] ease-[var(--ease-luxury)] group-hover:scale-[1.03]"
             />
           </motion.div>
         </motion.div>
       </div>
-      <div className="absolute bottom-0 left-0 w-full overflow-hidden bg-white/40 backdrop-blur-md border-t border-champagne/50 py-4 z-20">
+      <div className="absolute bottom-0 left-0 w-full overflow-hidden bg-white/40 backdrop-blur-md border-t border-champagne/50 py-4  z-20">
         <div className="animate-marquee flex gap-8 md:gap-16 items-center whitespace-nowrap">
           {[...Array(6)].map((_, i) => (
             <React.Fragment key={i}>
