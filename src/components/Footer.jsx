@@ -45,10 +45,10 @@ export const Footer = () => {
               <span className="absolute -bottom-2 left-0 w-1/2 h-[1px] bg-gold/50"></span>
             </h3>
             <ul className="space-y-3 font-light text-sm tracking-wider uppercase text-cream/80">
-              <li><a href="#collections" className="inline-block hover:text-gold transition-all duration-500 hover:translate-x-2">Collections</a></li>
-              <li><a href="#customization" className="inline-block hover:text-gold transition-all duration-500 hover:translate-x-2">Customization</a></li>
-              <li><a href="#gallery" className="inline-block hover:text-gold transition-all duration-500 hover:translate-x-2">Gallery</a></li>
-              <li><a href="#contact" className="inline-block hover:text-gold transition-all duration-500 hover:translate-x-2">Contact</a></li>
+              <li><a href="/collections" className="inline-block hover:text-gold transition-all duration-500 hover:translate-x-2">Collections</a></li>
+              <li><a href="/customization" className="inline-block hover:text-gold transition-all duration-500 hover:translate-x-2">Customization</a></li>
+              <li><a href="/gallery" className="inline-block hover:text-gold transition-all duration-500 hover:translate-x-2">Gallery</a></li>
+              <li><a href="/contact" className="inline-block hover:text-gold transition-all duration-500 hover:translate-x-2">Contact</a></li>
             </ul>
           </motion.div>
 
