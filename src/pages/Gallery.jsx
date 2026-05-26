@@ -13,6 +13,12 @@ export default function Gallery() {
         { type: 'square', bg: 'bg-olive/20', title: 'Premium Keepsakes', img: "/gallery/img32.png" },
         { type: 'square', bg: 'bg-olive/20', title: 'Heritage Collection', img: "/gallery/img33.png" },
         { type: 'square', bg: 'bg-olive/20', title: 'Exclusive Releases', img: "/gallery/img34.png" },
+        { type: 'tall', bg: 'bg-olive/20', title: 'Exclusive Releases', img: "/gallery/img35.png" },
+        { type: 'square', bg: 'bg-olive/20', title: 'Exclusive Releases', img: "/gallery/img36.png" },
+        { type: 'square', bg: 'bg-olive/20', title: 'Exclusive Releases', img: "/gallery/img37.png" },
+        { type: 'square', bg: 'bg-olive/20', title: 'Exclusive Releases', img: "/gallery/img38.png" },
+        { type: 'square', bg: 'bg-olive/20', title: 'Exclusive Releases', img: "/gallery/img39.png" },
+        { type: 'square', bg: 'bg-olive/20', title: 'Exclusive Releases', img: "/gallery/img40.png" },
 
 
         { type: 'tall', bg: 'bg-champagne', title: 'Bespoke Sleeve Covers', img: "/gallery/img1.png" },

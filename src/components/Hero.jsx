@@ -115,36 +115,95 @@ export const Hero = () => {
 
         <motion.div
           style={{ x: imgX, y: imgY }}
-          initial={{ opacity: 0, filter: 'blur(20px)', scale: 0.95 }}
-          whileInView={{ opacity: 1, filter: 'blur(0px)', scale: 1 }}
+          initial={{ opacity: 0, filter: "blur(20px)", scale: 0.95 }}
+          whileInView={{ opacity: 1, filter: "blur(0px)", scale: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 1.2, delay: 0.8, ease: [0.25, 1, 0.5, 1] }}
-          className="relative h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] w-full flex justify-center items-center mt-8 lg:mt-0"
+          className="relative h-[320px] sm:h-[420px] md:h-[520px] lg:h-[620px] w-full flex justify-center items-center"
         >
-          {/* Luxury Mockup Image */}
-          <motion.div
-            animate={{ y: [0, -8, 0] }}
-            transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-            className="w-full h-full rounded-sm relative flex flex-col items-center justify-center overflow-hidden group"
-          >
-            <img
-              src="/3N/bgimg8.png"
-              alt="Luxury Chocolate"
-              className="absolute inset-0 w-full h-full object-contain transition-transform duration-[1.5s] ease-[var(--ease-luxury)] group-hover:scale-[1.03]"
-            />
-          </motion.div>
+          {[
+            { id: 1, img: "/gallery/col9bg.png" },
+            { id: 2, img: "/gallery/col6bg.png" },
+            { id: 3, img: "/gallery/col7bg.png" },
+            { id: 4, img: "/gallery/col8bg.png" },
+          ].map((item, index) => (
+            <motion.div
+              key={item.id}
+              animate={{ y: [0, -8, 0] }}
+              transition={{
+                duration: 6,
+                repeat: Infinity,
+                ease: "easeInOut",
+                delay: index * 0.3,
+              }}
+              whileHover={{
+                scale: 1.08,
+                zIndex: 50,
+              }}
+              className={`
+        absolute
+        w-[180px] sm:w-[220px] md:w-[280px] lg:w-[320px]
+        h-[260px] sm:h-[320px] md:h-[420px] lg:h-[480px]
+        rounded-2xl
+        overflow-hidden
+        group
+        transition-all
+        duration-500
+        cursor-pointer
+        [--stack-gap:45px] sm:[--stack-gap:60px] md:[--stack-gap:85px] lg:[--stack-gap:110px]
+      `}
+              style={{
+                left: `calc(50% + ${(index - 1.5)} * var(--stack-gap))`,
+                x: "-50%",
+                zIndex: 10 - index,
+              }}
+            >
+              {/* overlay */}
+              <div className="absolute inset-0  transition-all duration-500 z-10" />
+
+              <img
+                src={item.img}
+                alt="Luxury Chocolate"
+                className="
+          w-full
+          h-full
+          object-cover
+          transition-all
+          duration-700
+          group-hover:scale-110
+        "
+              />
+            </motion.div>
+          ))}
         </motion.div>
       </div>
-      <div className="absolute bottom-0 left-0 w-full overflow-hidden bg-white/40 backdrop-blur-md border-t border-champagne/50 py-4  z-20">
+      <div className="absolute bottom-0 left-0 w-full overflow-hidden bg-white/40 backdrop-blur-md border-t border-champagne/50 py-4 z-20">
         <div className="animate-marquee flex gap-8 md:gap-16 items-center whitespace-nowrap">
           {[...Array(6)].map((_, i) => (
             <React.Fragment key={i}>
-              <span className="text-sm md:text-base tracking-[0.2em] uppercase text-chocolate">3NDIARIES</span>
-              <span className="text-gold opacity-60">•</span>
-              <span className="text-sm md:text-base tracking-[0.2em] uppercase text-chocolate">Sweetest Moments</span>
-              <span className="text-gold opacity-60">•</span>
-              <span className="text-sm md:text-base tracking-[0.2em] uppercase text-chocolate">Luxury Personalized Chocolates</span>
-              <span className="text-gold opacity-60">•</span>
+              <span className="text-sm md:text-base tracking-[0.25em] uppercase text-chocolate">
+                3NDIARIES
+              </span>
+
+              <span className="text-gold opacity-50">✦</span>
+
+              <span className="text-sm md:text-base tracking-[0.25em] uppercase text-chocolate">
+                Crafted Luxury Chocolates
+              </span>
+
+              <span className="text-gold opacity-50">✦</span>
+
+              <span className="text-sm md:text-base tracking-[0.25em] uppercase text-chocolate">
+                Personalized Gifting
+              </span>
+
+              <span className="text-gold opacity-50">✦</span>
+
+              <span className="text-sm md:text-base tracking-[0.25em] uppercase text-chocolate">
+                Sweet Moments, Beautifully Wrapped
+              </span>
+
+              <span className="text-gold opacity-50">✦</span>
             </React.Fragment>
           ))}
         </div>

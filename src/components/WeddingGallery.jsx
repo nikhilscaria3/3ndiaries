@@ -5,6 +5,13 @@ import { useNavigate } from 'react-router-dom';
 export const WeddingGallery = () => {
   const navigate = useNavigate()
   const images = [
+            { type: 'tall', bg: 'bg-olive/20', title: 'Exclusive Releases', img: "/gallery/img35.png" },
+        { type: 'square', bg: 'bg-olive/20', title: 'Exclusive Releases', img: "/gallery/img36.png" },
+        { type: 'square', bg: 'bg-olive/20', title: 'Exclusive Releases', img: "/gallery/img37.png" },
+        { type: 'square', bg: 'bg-olive/20', title: 'Exclusive Releases', img: "/gallery/img38.png" },
+        { type: 'square', bg: 'bg-olive/20', title: 'Exclusive Releases', img: "/gallery/img39.png" },
+        { type: 'square', bg: 'bg-olive/20', title: 'Exclusive Releases', img: "/gallery/img40.png" },
+
     { type: 'tall', bg: 'bg-champagne', title: 'Sleeve Covers', img: "/gallery/img1.png" },
     { type: 'square', bg: 'bg-blush', title: 'Premium Gift Boxes', img: "/gallery/img2.png" },
     { type: 'wide', bg: 'bg-cream', title: 'Engraved Bars', img: "/gallery/img4.png" },
