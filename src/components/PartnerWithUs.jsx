@@ -19,7 +19,7 @@ export const PartnerWithUs = () => {
 
   return (
     <section className="py-24 bg-cream border-t border-b border-champagne/40 relative overflow-hidden">
-      <motion.div 
+      <motion.div
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
@@ -40,7 +40,7 @@ export const PartnerWithUs = () => {
 
         <div className="flex flex-col sm:flex-row justify-center gap-6 mt-8">
           {['Event Planners', 'Decorators', 'Caterers'].map((title, i) => (
-            <motion.div 
+            <motion.div
               key={i}
               variants={itemVariants}
               whileHover={{ y: -5 }}
@@ -55,7 +55,13 @@ export const PartnerWithUs = () => {
         </div>
 
         <motion.div variants={itemVariants} className="mt-12">
-          <button className="btn-primary mt-10">Inquire About Partnerships</button>
+          <a
+            href="https://wa.me/919562849356"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-primary mt-10"          >
+            Inquire About Partnerships          </a>
+
         </motion.div>
       </motion.div>
     </section>
