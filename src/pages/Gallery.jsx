@@ -37,12 +37,6 @@ export default function Gallery() {
         { type: 'square', bg: 'bg-olive/20', title: 'Minimalist Gifting', img: "/gallery/img20.png" },
         { type: 'square', bg: 'bg-olive/20', title: 'Rustic Charm Hampers', img: "/gallery/img21.png" },
         { type: 'square', bg: 'bg-olive/20', title: 'Corporate Milestones', img: "/gallery/img22.png" },
-        { type: 'square', bg: 'bg-olive/20', title: 'Grandeur Collections', img: "/gallery/img23.png" },
-
-
-
-
-
     ];
 
 
