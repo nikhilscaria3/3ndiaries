@@ -3,21 +3,48 @@ import { motion } from 'framer-motion';
 
 export default function Gallery() {
     const images = [
-        { type: 'tall', bg: 'bg-champagne', title: 'Sleeve Covers', img: "/gallery/img1.png" },
+
+        { type: 'square', bg: 'bg-olive/20', title: 'Personalized Favors', img: "/gallery/img24.png" },
+        { type: 'square', bg: 'bg-olive/20', title: 'Seasonal Delights', img: "/gallery/img25.png" },
+        { type: 'square', bg: 'bg-olive/20', title: 'VIP Gift Boxes', img: "/gallery/img27.png" },
+        { type: 'square', bg: 'bg-olive/20', title: 'Exquisite Curation', img: "/gallery/img28.png" },
+        { type: 'square', bg: 'bg-olive/20', title: 'Timeless Elegance', img: "/gallery/img29.png" },
+        { type: 'square', bg: 'bg-olive/20', title: 'Celebration Bundles', img: "/gallery/img31.png" },
+        { type: 'square', bg: 'bg-olive/20', title: 'Premium Keepsakes', img: "/gallery/img32.png" },
+        { type: 'square', bg: 'bg-olive/20', title: 'Heritage Collection', img: "/gallery/img33.png" },
+        { type: 'square', bg: 'bg-olive/20', title: 'Exclusive Releases', img: "/gallery/img34.png" },
+
+
+        { type: 'tall', bg: 'bg-champagne', title: 'Bespoke Sleeve Covers', img: "/gallery/img1.png" },
         { type: 'square', bg: 'bg-blush', title: 'Premium Gift Boxes', img: "/gallery/img2.png" },
-        { type: 'square', bg: 'bg-ivory', title: 'Flat Mailers', img: "/gallery/img3.png" },
-        { type: 'square', bg: 'bg-cream', title: 'Engraved Bars', img: "/gallery/img4.png" },
-        { type: 'wide', bg: 'bg-olive/20', title: 'Event Hampers', img: "/gallery/img5.png" },
-        { type: 'wide', bg: 'bg-olive/20', title: 'Event Hampers', img: "/gallery/img6.png" },
-        { type: 'wide', bg: 'bg-olive/20', title: 'Event Hampers', img: "/gallery/img7.png" },
-        { type: 'tall', bg: 'bg-champagne', title: 'Sleeve Covers', img: "/gallery/img8.png" },
-        { type: 'square', bg: 'bg-blush', title: 'Premium Gift Boxes', img: "/gallery/img9.png" },
-        { type: 'square', bg: 'bg-ivory', title: 'Flat Mailers', img: "/gallery/img10.png" },
-        { type: 'square', bg: 'bg-cream', title: 'Engraved Bars', img: "/gallery/img11.png" },
-        { type: 'square', bg: 'bg-olive/20', title: 'Event Hampers', img: "/gallery/img12.png" },
-        { type: 'square', bg: 'bg-olive/20', title: 'Event Hampers', img: "/gallery/img13.png" },
-        { type: 'square', bg: 'bg-olive/20', title: 'Event Hampers', img: "/gallery/img14.png" },
+        { type: 'square', bg: 'bg-ivory', title: 'Elegant Flat Mailers', img: "/gallery/img3.png" },
+        { type: 'square', bg: 'bg-cream', title: 'Signature Engraved Bars', img: "/gallery/img4.png" },
+        { type: 'wide', bg: 'bg-olive/20', title: 'Corporate Gifting', img: "/gallery/img5.png" },
+        { type: 'wide', bg: 'bg-olive/20', title: 'Wedding Collections', img: "/gallery/img6.png" },
+        { type: 'wide', bg: 'bg-olive/20', title: 'Festive Hampers', img: "/gallery/img7.png" },
+        { type: 'tall', bg: 'bg-champagne', title: 'Custom Sleeve Covers', img: "/gallery/img8.png" },
+        { type: 'square', bg: 'bg-blush', title: 'Luxury Assortments', img: "/gallery/img9.png" },
+        { type: 'square', bg: 'bg-ivory', title: 'Classic Pralines', img: "/gallery/img10.png" },
+        { type: 'square', bg: 'bg-cream', title: 'Artisan Truffle Boxes', img: "/gallery/img11.png" },
+        { type: 'square', bg: 'bg-olive/20', title: 'Bespoke Event Favors', img: "/gallery/img12.png" },
+        { type: 'square', bg: 'bg-olive/20', title: 'Ribbon Tied Bundles', img: "/gallery/img13.png" },
+        { type: 'square', bg: 'bg-olive/20', title: 'Celebration Hampers', img: "/gallery/img14.png" },
+        { type: 'square', bg: 'bg-olive/20', title: 'Bridal Shower Treats', img: "/gallery/img15.png" },
+        { type: 'square', bg: 'bg-olive/20', title: 'Gold Foil Packaging', img: "/gallery/img16.png" },
+        { type: 'square', bg: 'bg-olive/20', title: 'Anniversary Specials', img: "/gallery/img17.png" },
+        { type: 'square', bg: 'bg-olive/20', title: 'Boutique Chocolate Boxes', img: "/gallery/img18.png" },
+        { type: 'square', bg: 'bg-olive/20', title: 'Velvet Touch Boxes', img: "/gallery/img19.png" },
+        { type: 'square', bg: 'bg-olive/20', title: 'Minimalist Gifting', img: "/gallery/img20.png" },
+        { type: 'square', bg: 'bg-olive/20', title: 'Rustic Charm Hampers', img: "/gallery/img21.png" },
+        { type: 'square', bg: 'bg-olive/20', title: 'Corporate Milestones', img: "/gallery/img22.png" },
+        { type: 'square', bg: 'bg-olive/20', title: 'Grandeur Collections', img: "/gallery/img23.png" },
+
+
+
+
+
     ];
+
 
     return (
         <section id="gallery" className="py-24 bg-white">
