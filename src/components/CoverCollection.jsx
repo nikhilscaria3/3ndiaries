@@ -8,7 +8,9 @@ const collections = {
         { id: 'w3', src: '/collection/wedding/col3.png', title: 'Emerald Dream', desc: 'Lush and vibrant' },
         { id: 'w4', src: '/collection/wedding/col4.png', title: 'Golden Hour', desc: 'Warm and inviting' },
         { id: 'w5', src: '/collection/wedding/col5.png', title: 'Silver Lining', desc: 'Sleek and modern' },
-        { id: 'w6', src: '/collection/wedding/col6.png', title: 'Vintage Leather', desc: 'Classic and timeless' }
+        { id: 'w6', src: '/collection/wedding/col6.png', title: 'Vintage Leather', desc: 'Classic and timeless' },
+        { id: 'w7', src: '/collection/wedding/col7.png', title: 'Vintage Leather', desc: 'Classic and timeless' }
+
     ],
     birthday: [
         { id: 'b1', src: '/collection/birthday/col1.png', title: 'Joyful Celebration', desc: 'Bright and energetic' },
