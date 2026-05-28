@@ -62,14 +62,14 @@ export const ContactCTA = () => {
             transition={{ duration: 0.8, delay: 0.7 }}
             className="flex flex-col sm:flex-row items-center justify-center gap-6"
           >
-            <a
+            {/* <a
               href="https://docs.google.com/forms/d/e/1FAIpQLSeyqGNP2kVAdL7omHzsxAUytGz2XwhQWAvrJkixoAdCDagHqQ/viewform?usp=sharing&ouid=102357883540256253288"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-gold text-chocolate px-10 py-4 font-medium tracking-widest uppercase text-sm hover:bg-white hover:text-chocolate transition-all duration-[0.8s] ease-[var(--ease-luxury)] shadow-[0_0_20px_rgba(212,175,55,0.4)] hover:shadow-[0_0_40px_rgba(255,255,255,0.6)] hover:scale-105 hover:-translate-y-1 relative overflow-hidden"
             >
               Fill Order Form
-            </a>
+            </a> */}
             <a
               href="https://wa.me/919562849356"
               target="_blank"

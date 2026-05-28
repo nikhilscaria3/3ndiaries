@@ -47,7 +47,7 @@ export const Navbar = () => {
         </div>
 
         <a
-          href="https://docs.google.com/forms/d/e/1FAIpQLSeyqGNP2kVAdL7omHzsxAUytGz2XwhQWAvrJkixoAdCDagHqQ/viewform?usp=sharing&ouid=102357883540256253288"
+          href="https://wa.me/919562849356"
           target="_blank"
           rel="noopener noreferrer"
           className="hidden md:block btn-primary px-6 py-2 text-xs">

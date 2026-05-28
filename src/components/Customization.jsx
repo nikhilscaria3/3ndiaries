@@ -108,7 +108,7 @@ export const Customization = () => {
               </motion.div>
             ))}
           </div>
-
+          {/* 
           <motion.button
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -117,7 +117,8 @@ export const Customization = () => {
             className="btn-primary mt-8"
           >
             Start Your Design
-          </motion.button>
+          </motion.button> */}
+         
         </motion.div>
 
       </div>
