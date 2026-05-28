@@ -40,7 +40,7 @@ const flavors = {
 const FlavorList = ({ title, items, delayOffset }) => {
   return (
     <div className="flex-1 bg-cream p-10 border border-champagne/50 luxury-shadow hover:border-gold/30 transition-colors duration-500 rounded-sm">
-      <motion.h3 
+      <motion.h3
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
@@ -51,7 +51,7 @@ const FlavorList = ({ title, items, delayOffset }) => {
       </motion.h3>
       <ul className="space-y-5">
         {items.map((flavor, i) => (
-          <motion.li 
+          <motion.li
             key={i}
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -71,7 +71,7 @@ const FlavorList = ({ title, items, delayOffset }) => {
 export const Flavors = () => {
   return (
     <section className="py-24 bg-white relative overflow-hidden">
-      <div className="container mx-auto px-6 max-w-6xl relative z-10">
+      <div className="container mx-auto px-6 max-w-7xl relative z-10">
         <div className="text-center mb-16">
           <div className="overflow-hidden mb-4">
             <motion.h2
@@ -84,14 +84,14 @@ export const Flavors = () => {
               Our Exquisite Flavors
             </motion.h2>
           </div>
-          <motion.div 
+          <motion.div
             initial={{ scaleX: 0 }}
             whileInView={{ scaleX: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2, ease: [0.25, 1, 0.5, 1] }}
             className="w-16 h-[1px] bg-gold mx-auto mb-6 origin-center"
           ></motion.div>
-          <motion.p 
+          <motion.p
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}

@@ -11,6 +11,7 @@ import { PartnerWithUs } from './../components/PartnerWithUs';
 import { Collaborators } from './../components/Collaborators';
 import { ContactCTA } from './../components/ContactCTA';
 import { Services } from './../components/Services';
+import { ShopSection } from './../components/ShopSection';
 
 function Home() {
     const [loading, setLoading] = useState(true);
@@ -42,7 +43,8 @@ function Home() {
                 className="w-full overflow-hidden font-sans relative z-10"
             >
                 <Hero />
-                <ProductTiers />
+                <ShopSection />
+                {/* <ProductTiers /> */}
                 <Flavors />
                 <Customization />
                 {/* <CoverPreviewGenerator /> */}

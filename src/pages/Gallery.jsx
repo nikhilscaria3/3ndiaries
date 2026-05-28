@@ -12,6 +12,17 @@ export default function Gallery() {
         { type: 'square', bg: 'bg-olive/20', title: 'Celebration Bundles', img: "/gallery/img31.png" },
         { type: 'square', bg: 'bg-olive/20', title: 'Premium Keepsakes', img: "/gallery/img32.png" },
         { type: 'square', bg: 'bg-olive/20', title: 'Heritage Collection', img: "/gallery/img33.png" },
+
+        { type: 'square', bg: 'bg-olive/20', title: 'Exclusive Releases', img: "/collection/wedding/flat/flat1.png" },
+        { type: 'square', bg: 'bg-olive/20', title: 'Exclusive Releases', img: "/collection/wedding/flat/flat2.png" },
+        { type: 'square', bg: 'bg-olive/20', title: 'Exclusive Releases', img: "/collection/wedding/flat/flat5.png" },
+        { type: 'square', bg: 'bg-olive/20', title: 'Exclusive Releases', img: "/collection/wedding/flat/flat6.png" },
+        { type: 'square', bg: 'bg-olive/20', title: 'Exclusive Releases', img: "/collection/wedding/fold/fold1.png" },
+        { type: 'square', bg: 'bg-olive/20', title: 'Exclusive Releases', img: "/collection/wedding/fold/fold2.png" },
+        { type: 'square', bg: 'bg-olive/20', title: 'Exclusive Releases', img: "/collection/wedding/fold/fold3.png" },
+        { type: 'square', bg: 'bg-olive/20', title: 'Exclusive Releases', img: "/collection/wedding/fold/fold4.png" },
+
+
         { type: 'square', bg: 'bg-olive/20', title: 'Exclusive Releases', img: "/gallery/img34.png" },
         { type: 'tall', bg: 'bg-olive/20', title: 'Exclusive Releases', img: "/gallery/img35.png" },
         { type: 'square', bg: 'bg-olive/20', title: 'Exclusive Releases', img: "/gallery/img36.png" },

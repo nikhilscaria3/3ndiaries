@@ -5,12 +5,22 @@ import { useNavigate } from 'react-router-dom';
 export const WeddingGallery = () => {
   const navigate = useNavigate()
   const images = [
-            { type: 'tall', bg: 'bg-olive/20', title: 'Exclusive Releases', img: "/gallery/img35.png" },
-        { type: 'square', bg: 'bg-olive/20', title: 'Exclusive Releases', img: "/gallery/img36.png" },
-        { type: 'square', bg: 'bg-olive/20', title: 'Exclusive Releases', img: "/gallery/img37.png" },
-        { type: 'square', bg: 'bg-olive/20', title: 'Exclusive Releases', img: "/gallery/img38.png" },
-        { type: 'square', bg: 'bg-olive/20', title: 'Exclusive Releases', img: "/gallery/img39.png" },
-        { type: 'square', bg: 'bg-olive/20', title: 'Exclusive Releases', img: "/gallery/img40.png" },
+    { type: 'tall', bg: 'bg-olive/20', title: 'Exclusive Releases', img: "/gallery/img35.png" },
+    { type: 'square', bg: 'bg-olive/20', title: 'Exclusive Releases', img: "/gallery/img36.png" },
+    { type: 'square', bg: 'bg-olive/20', title: 'Exclusive Releases', img: "/gallery/img37.png" },
+    { type: 'square', bg: 'bg-olive/20', title: 'Exclusive Releases', img: "/gallery/img38.png" },
+    { type: 'square', bg: 'bg-olive/20', title: 'Exclusive Releases', img: "/gallery/img39.png" },
+    { type: 'square', bg: 'bg-olive/20', title: 'Exclusive Releases', img: "/gallery/img40.png" },
+
+    { type: 'square', bg: 'bg-olive/20', title: 'Exclusive Releases', img: "/collection/wedding/flat/flat1.png" },
+    { type: 'square', bg: 'bg-olive/20', title: 'Exclusive Releases', img: "/collection/wedding/flat/flat2.png" },
+    { type: 'square', bg: 'bg-olive/20', title: 'Exclusive Releases', img: "/collection/wedding/flat/flat5.png" },
+    { type: 'square', bg: 'bg-olive/20', title: 'Exclusive Releases', img: "/collection/wedding/flat/flat6.png" },
+    { type: 'square', bg: 'bg-olive/20', title: 'Exclusive Releases', img: "/collection/wedding/fold/fold1.png" },
+    { type: 'square', bg: 'bg-olive/20', title: 'Exclusive Releases', img: "/collection/wedding/fold/fold2.png" },
+    { type: 'square', bg: 'bg-olive/20', title: 'Exclusive Releases', img: "/collection/wedding/fold/fold3.png" },
+    { type: 'square', bg: 'bg-olive/20', title: 'Exclusive Releases', img: "/collection/wedding/fold/fold4.png" },
+
 
     { type: 'tall', bg: 'bg-champagne', title: 'Sleeve Covers', img: "/gallery/img1.png" },
     { type: 'square', bg: 'bg-blush', title: 'Premium Gift Boxes', img: "/gallery/img2.png" },
