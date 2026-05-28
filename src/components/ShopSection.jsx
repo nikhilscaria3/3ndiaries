@@ -7,7 +7,7 @@ const products = [
   {
     id: 1,
     name: 'Flat Card Chocolates',
-    description: 'Elegant single-sided custom cards with premium chocolate embedded. Perfect for simple, impactful gifting.',
+    description: 'Minimal. Elegant. Memorable.\n\nOur Flat Card Chocolates combine personalized celebration cards with premium handcrafted chocolates, creating a simple yet luxurious gifting experience for weddings, engagements, baptisms, birthdays, and special moments. Designed for elegant bulk gifting while preserving a premium aesthetic.',
     price: 40,
     images: [
       '/collection/wedding/flat/flat1.png',
@@ -18,14 +18,13 @@ const products = [
       '/collection/wedding/flat/flat8.png',
       '/collection/wedding/flat/flat9.png',
       '/collection/wedding/flat/flat10.png',
-
     ],
-    features: ['Custom Cover Design', 'Premium Chocolate Inside', 'Starts from ₹40', 'Perfect for Bulk Gifting']
+    features: ['Personalized Cover Design', 'Premium Chocolate Embedded', 'Perfect for Wedding & Event Guests', 'Elegant Minimal Presentation']
   },
   {
     id: 2,
     name: 'Fold Card Chocolates',
-    description: 'Classic folded greeting cards revealing a delightful chocolate surprise inside, providing more space for your message.',
+    description: 'A personalized keepsake that opens into a sweet celebration.\n\nOur Fold Card Chocolates reveal a premium chocolate surprise inside an elegant folded design, offering more space for heartfelt messages, couple details, and unforgettable memories. Crafted for weddings, engagements, baptisms, birthdays, and luxury celebrations. Designed to leave a lasting impression.',
     price: 50,
     images: [
       '/collection/wedding/fold/fold1.png',
@@ -34,16 +33,13 @@ const products = [
       '/collection/wedding/fold/fold4.png',
       '/collection/wedding/fold/fold5.png',
       '/collection/wedding/fold/fold6.png',
-      
-
-
     ],
-    features: ['Interactive Unboxing', 'More Space for Messages', 'Starts from ₹50', 'Premium Finish']
+    features: ['Interactive Unboxing Experience', 'Personalized Message Space', 'Elegant Premium Finish', 'Ideal for Wedding Guest Favors']
   },
   {
     id: 3,
     name: 'Artisan Chocolate Bars',
-    description: 'Crafted chocolate bars available in three exquisite tiers. Standard (₹120), Premium (₹250), and Ultrapremium (₹500+).',
+    description: 'Luxury handcrafted chocolate bars designed for unforgettable celebrations. Each collection is carefully crafted with premium ingredients, elegant custom wrapping, and personalized presentation.\n\nSignature Tiers:\n• Standard Collection — Starts from ₹120\n• Premium Collection — Starts from ₹250\n• Ultra Premium Collection — Starts from ₹500+',
     price: 120,
     priceLabel: '₹120 - ₹500+',
     images: [
@@ -54,11 +50,8 @@ const products = [
       '/collection/wedding/bar/col5.png',
       '/collection/wedding/bar/col6.png',
       '/collection/wedding/bar/col7.png',
-
-
-
     ],
-    features: ['Standard Bar starts from ₹120', 'Premium Bar starts from ₹250', 'Ultrapremium starts from ₹500', 'Elegant Custom Wrapper']
+    features: ['Elegant Custom Wrappers', 'Personalized Couple Designs', 'Premium Chocolate Experience', 'Luxury Presentation & Finishing']
   }
 ];
 
@@ -169,7 +162,7 @@ export function ShopSection() {
 
               <div className="p-8 flex flex-col flex-grow">
                 <h3 className="text-2xl font-serif text-stone-900 mb-3">{product.name}</h3>
-                <p className="text-stone-500 mb-6">{product.description}</p>
+                <p className="text-stone-500 mb-6 whitespace-pre-line text-sm leading-relaxed">{product.description}</p>
 
                 <ul className="space-y-2 mb-8 flex-grow">
                   {product.features.map((feature, i) => (
