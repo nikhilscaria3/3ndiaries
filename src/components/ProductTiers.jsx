@@ -105,9 +105,9 @@ const TiltCard = ({ tier, index, className = "" }) => {
         ))}
       </ul>
 
-      <div style={{ transform: "translateZ(40px)" }} className="w-full mt-auto relative">
+      {/* <div style={{ transform: "translateZ(40px)" }} className="w-full mt-auto relative">
         <button className="btn-primary w-full" onClick={() => navigate("/collections")}>View Details</button>
-      </div>
+      </div> */}
     </motion.div>
   );
 };
@@ -125,7 +125,7 @@ export const ProductTiers = () => {
               transition={{ duration: 0.8, ease: [0.25, 1, 0.5, 1] }}
               className="text-4xl md:text-5xl font-serif text-chocolate"
             >
-              Curated Collections
+              Curated Bar Collections
             </motion.h2>
           </div>
           <motion.div
